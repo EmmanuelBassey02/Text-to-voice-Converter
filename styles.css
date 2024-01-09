@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.hero {
+    /* padding: 2vw 70px; */
+    /* border: 2px solid white; */
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: center;
+    width: 100%;
+    /* background: linear-gradient(45deg, #010648, #2a2a2a); */
+    background: linear-gradient(45deg, black, #0d2d08,  #2b2424);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    margin-bottom: 19px;
+}
+
+
+@media  screen and (max-width: 830px) {
+    .hero h1 {
+        font-size: 45px;
+    }
+}
+
+@media  screen and (max-width: 570px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+}
+
+.hero h1 span {
+    color: white;
+    /* color: #ff2963; */
+}
+
+.hero h1 .voice-span {
+    /* background-color: #ff2963; */
+    background-color: rgb(26, 124, 39);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+@media  screen and (max-width: 500px) {
+    .hero h1 .voice-span{
+        padding: 5px;
+    }
+}
+
+
+
+textarea {
+    width: 600px;
+    height: 250px;
+    background: #2a392a;
+    color: #fff;
+    border: 1px solid green;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    font-size: 16px;
+    margin: auto;
+}
+
+
+@media  screen and (max-width: 620px) {
+    textarea {
+        width: 90%;
+        height: 200px;
+    }
+}
+
+textarea::placeholder {
+    color: #aca9a9;
+    font-size: 16px;
+}
+
+.row {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: auto;
+}
+
+
+@media  screen and (max-width: 620px) {
+    .row {
+        width: 90%;
+        gap: 20px;
+    }
+}
+
+button {
+    height: 50px;
+    width: 130px;
+    background-color:  rgb(26, 124, 39);;
+    color: #ffff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+svg {
+    fill: white;
+    height: 35px;
+    width: 35px;
+}
+
+@media  screen and (max-width: 600px) {
+    button {
+        height: 40px;
+        width: 100px;
+        font-size: 16px;
+    }
+}
+
+
+button:hover {
+    background-color: rgb(245, 251, 245);
+    color: rgb(6, 105, 6);
+    transition: all linear 0.15s;
+}
+
+button:hover svg{
+    fill: rgb(6, 105, 6);
+}
+
+select {
+    flex: 1;
+    color: white;
+    background: #2a392a;
+    height: 55px;
+    border: 0;
+    outline: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 35px;
+     font-size: 20px;
+
+}
+
+@media  screen and (max-width: 600px) {
+    select {
+        height: 40px;
+    }
+}
